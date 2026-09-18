@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Core Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 JS Core Dashboard</h1>
+
+      <!-- 1. Bölüm: Canlı API'den Kullanıcı Getirme -->
+      <section class="card">
+        <h2>1. Canlı Kullanıcı Profil Bilgisi (Fetch & Async/Await)</h2>
+        <button id="fetchUserBtn">Rastgele Kullanıcı Getir</button>
+        <div id="userInfo" class="info-box">Henüz kullanıcı çekilmedi.</div>
+      </section>
+
+      <!-- 2. Bölüm: Görev Ekleme ve LocalStorage -->
+      <section class="card">
+        <h2>2. Görev Listesi (Array Methods & LocalStorage)</h2>
+        <form id="taskForm">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Yeni görev yazın..."
+            required
+          />
+          <button type="submit">Ekle</button>
+        </form>
+
+        <div class="filter-group">
+          <button id="filterAll">Hepsini Göster</button>
+          <button id="filterCompleted">Tamamlananlar</button>
+        </div>
+
+        <ul id="taskList"></ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
